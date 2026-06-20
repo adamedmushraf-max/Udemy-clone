@@ -53,6 +53,10 @@ body{
     align-items: center;
 }
 
+.Navbar__s4{
+    display: none;
+}
+
 .categories{
     display: flex;
     padding: 10px;
@@ -149,7 +153,9 @@ body{
 }
 
 .course-card{
-    width: 300px;
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
      
     
 }
@@ -200,4 +206,28 @@ body{
 .footer__two{
     display: flex;
     justify-content: space-between;
+}
+
+/* Media Quaries*/
+
+@media screen and (max-width:800px) {
+    body{
+        font-size: 10;
+    }
+}
+
+@media screen and (max-width:600px){
+    .course-card{
+        flex-basis: 40%;
+    }
+    .categories{
+        display: none;
+    }
+    .Navbar__s2,.Navbar__s3{
+        display: none;
+
+    }
+    .Navbar__s4{
+        display: block;
+    }
 }
